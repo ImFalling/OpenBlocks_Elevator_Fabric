@@ -33,7 +33,7 @@ public class Elevator extends Block {
 			BlockState blockUnderFeet = player.world.getBlockState(new BlockPos(player.getX(), player.getY() + height, player.getZ()));
 
 			// Check if we have got an Elevator block.
-			if (blockUnderFeet.getBlock() != ExampleMod.ELEVATOR_BLOCK) { continue; }
+			if (blockUnderFeet.getBlock() != FabricElevatorMod.ELEVATOR_BLOCK) { continue; }
 
 			// ExampleMod.LOGGER.debug("Found!");
 			return new BlockPos(player.getX(), player.getY() + height, player.getZ());
@@ -55,7 +55,7 @@ public class Elevator extends Block {
         player.world.playSound(
             null, // Player - if non-null, will play sound for every nearby player *except* the specified player
             new BlockPos(player.getPos()), // The position of where the sound will come from
-            ExampleMod.WOOSH_EVENT, // The sound that will play
+            FabricElevatorMod.WOOSH_EVENT, // The sound that will play
             SoundCategory.BLOCKS, // This determines which of the volume sliders affect this sound
             1f, //Volume multiplier, 1 is normal, 0.5 is half volume, etc
             1f // Pitch multiplier, 1 is normal, 0.5 is half pitch, etc

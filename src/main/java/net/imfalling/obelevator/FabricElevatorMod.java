@@ -14,7 +14,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class ExampleMod implements ModInitializer {
+public class FabricElevatorMod implements ModInitializer {
 	// Init blocks and sound
 	public static final String MOD_ID = "imfalling";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
@@ -30,6 +30,6 @@ public class ExampleMod implements ModInitializer {
 		// Register blocks and sound
 		ELEVATOR_BLOCK = Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "elevator"), ELEVATOR);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "elevator"), new BlockItem(ELEVATOR, new FabricItemSettings().group(ItemGroup.MISC)));
-		Registry.register(Registry.SOUND_EVENT, ExampleMod.WOOSH_SOUND, WOOSH_EVENT);
+		Registry.register(Registry.SOUND_EVENT, FabricElevatorMod.WOOSH_SOUND, WOOSH_EVENT);
 	}
 }
