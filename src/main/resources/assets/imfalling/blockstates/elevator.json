@@ -1,5 +1,7 @@
 {
-    "variants": {
-      "": { "model": "imfalling:block/elevator" }
-    }
+	"variants": {
+		"": {
+			"model": "imfalling:block/elevator"
+		}
+	}
 }
