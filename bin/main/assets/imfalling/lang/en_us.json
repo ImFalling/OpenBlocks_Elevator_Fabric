@@ -1,4 +1,6 @@
 {
-    "block.imfalling.elevator": "Elevator",
-    "item.imfalling.elevator": "Elevator"
+    "block.imfalling.elevator_white": "Elevator",
+    "item.imfalling.elevator_white": "Elevator",
+    "block.imfalling.elevator_red": "Elevator",
+    "item.imfalling.elevator_red": "Elevator"
 } 
