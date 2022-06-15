@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD:src/main/resources/data/imfalling/recipes/elevator_white.json
     "type": "minecraft:crafting_shaped",
     "pattern": [
       "OOO",
@@ -17,5 +18,24 @@
       "item": "imfalling:elevator_white",
       "count": 1
     }
+=======
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"OOO",
+		"ORO",
+		"OOO"
+	],
+	"key": {
+		"O": {
+			"item": "minecraft:white_wool"
+		},
+		"R": {
+			"item": "minecraft:ender_pearl"
+		}
+	},
+	"result": {
+		"item": "imfalling:elevator",
+		"count": 1
+	}
+>>>>>>> 973974dbb8ab3031592ca0792aea7319959e5ab0:src/main/resources/data/imfalling/recipes/elevator.json
 }
-

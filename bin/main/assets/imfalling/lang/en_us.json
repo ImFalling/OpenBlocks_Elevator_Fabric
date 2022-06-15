@@ -1,6 +1,12 @@
 {
+<<<<<<< HEAD
     "block.imfalling.elevator_white": "Elevator",
     "item.imfalling.elevator_white": "Elevator",
     "block.imfalling.elevator_red": "Elevator",
     "item.imfalling.elevator_red": "Elevator"
 } 
+=======
+	"block.imfalling.elevator": "Elevator",
+	"item.imfalling.elevator": "Elevator"
+}
+>>>>>>> 973974dbb8ab3031592ca0792aea7319959e5ab0

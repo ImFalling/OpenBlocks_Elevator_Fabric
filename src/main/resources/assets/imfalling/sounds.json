@@ -1,8 +1,7 @@
 {
-    "woosh": {
-      "sounds": [
-        "imfalling:woosh"
-      ]
-    }
+	"woosh": {
+		"sounds": [
+			"imfalling:woosh"
+		]
+	}
 }
-
