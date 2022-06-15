@@ -1,0 +1,26 @@
+{
+  "mappings": {
+    "net/imfalling/obelevator/mixin/SneakMixin": {
+      "setSneaking": "Lnet/minecraft/class_1297;method_5660(Z)V"
+    },
+    "net/imfalling/obelevator/mixin/CooldownMixin": {
+      "jumpingCooldown": "field_6228:I"
+    },
+    "net/imfalling/obelevator/mixin/JumpMixin": {
+      "jump()V": "Lnet/minecraft/class_1657;method_6043()V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "net/imfalling/obelevator/mixin/SneakMixin": {
+        "setSneaking": "Lnet/minecraft/class_1297;method_5660(Z)V"
+      },
+      "net/imfalling/obelevator/mixin/CooldownMixin": {
+        "jumpingCooldown": "field_6228:I"
+      },
+      "net/imfalling/obelevator/mixin/JumpMixin": {
+        "jump()V": "Lnet/minecraft/class_1657;method_6043()V"
+      }
+    }
+  }
+}
