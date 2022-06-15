@@ -27,7 +27,7 @@ public class ExampleMod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Loading OpenBlocks Elevator Mod by ImFalling...");
 
-		//Register blocks and sound
+		// Register blocks and sound
 		ELEVATOR_BLOCK = Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "elevator"), ELEVATOR);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "elevator"), new BlockItem(ELEVATOR, new FabricItemSettings().group(ItemGroup.MISC)));
 		Registry.register(Registry.SOUND_EVENT, ExampleMod.WOOSH_SOUND, WOOSH_EVENT);
