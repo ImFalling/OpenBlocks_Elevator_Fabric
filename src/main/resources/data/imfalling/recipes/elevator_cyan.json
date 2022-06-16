@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OOO",
+    "ORO",
+    "OOO"
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:cyan_wool"
+    },
+    "R": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "result": {
+    "item": "imfalling:elevator_cyan",
+    "count": 1
+  }
+}
+

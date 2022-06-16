@@ -1,8 +1,10 @@
 package net.imfalling.obelevator;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.imfalling.obelevator.mixin.CooldownMixin;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Material;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.sound.SoundCategory;
@@ -12,9 +14,11 @@ import net.minecraft.util.math.Vec3d;
 public class Elevator extends Block {
     static int MAXIMUM_TELEPORT_HEIGHT = 32;
     int COOLDOWN = 0;
+	public String dyeColor;
 
-    public Elevator(Settings settings){
-        super(settings);
+    public Elevator(String dyeColor){
+        super(FabricBlockSettings.of(Material.WOOL).strength(4.0f));
+		this.dyeColor = dyeColor;
     }
 
 	/**
@@ -23,7 +27,7 @@ public class Elevator extends Block {
 	 * @param searchOnTop If true, will search for the elevator on top of the player, otherwise will search for the elevator below.
 	 * @return A block position of the elevator, or null if no elevator was found.
 	 */
-	public static BlockPos findElevatorBlock(PlayerEntity player, Boolean searchOnTop) {
+	public static BlockPos findElevatorBlock(PlayerEntity player, Boolean searchOnTop, BlockState compareBlock) {
 		// Go through blocks in range and check if they are the same type as the block over or below the player.
 		for (int i = (searchOnTop ? 2 : 4); i <= MAXIMUM_TELEPORT_HEIGHT; i++) {
 			int height = (searchOnTop ? i : -i);
@@ -32,8 +36,8 @@ public class Elevator extends Block {
 			// if searchOnTop is true, then we search for the block *above* the player.
 			BlockState blockUnderFeet = player.world.getBlockState(new BlockPos(player.getX(), player.getY() + height, player.getZ()));
 
-			// Check if we have got an Elevator block.
-			if (blockUnderFeet.getBlock() != FabricElevatorMod.ELEVATOR_BLOCK) { continue; }
+			// Check if we have got an Elevator block of the same color
+			if (blockUnderFeet.getBlock() != compareBlock.getBlock()) { continue; }
 
 			// ExampleMod.LOGGER.debug("Found!");
 			return new BlockPos(player.getX(), player.getY() + height, player.getZ());
@@ -77,7 +81,7 @@ public class Elevator extends Block {
 		if ((player.isOnGround() && jumpingCooldown == 0 && blockUnderFeet.getBlock() instanceof Elevator elevator) == false) { return; }
 
 		// Find the elevator on top of a player:
-		BlockPos elevatorPos = findElevatorBlock(player, true);
+		BlockPos elevatorPos = findElevatorBlock(player, true, blockUnderFeet);
 
 		// If elevator was found, teleport the player:
 		if (elevatorPos == null) { return; }
@@ -101,8 +105,8 @@ public class Elevator extends Block {
 		// Only standing on elevator players with 0 cooldown can use the elevator:
 		if ((player.isOnGround() && jumpingCooldown == 0 && blockUnderFeet.getBlock() instanceof Elevator elevator) == false) { return; }
 
-		// Find the elevator on top of a player:
-		BlockPos elevatorPos = findElevatorBlock(player, false);
+		// Find the elevator on below a player:
+		BlockPos elevatorPos = findElevatorBlock(player, false, blockUnderFeet);
 
 		// If elevator was found, teleport the player:
 		if (elevatorPos == null) { return; }

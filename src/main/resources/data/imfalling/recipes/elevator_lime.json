@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OOO",
+    "ORO",
+    "OOO"
+  ],
+  "key": {
+    "O": {
+      "item": "minecraft:lime_wool"
+    },
+    "R": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "result": {
+    "item": "imfalling:elevator_lime",
+    "count": 1
+  }
+}
+

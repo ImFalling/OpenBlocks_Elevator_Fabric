@@ -1,12 +1,34 @@
 {
-<<<<<<< HEAD
     "block.imfalling.elevator_white": "Elevator",
     "item.imfalling.elevator_white": "Elevator",
     "block.imfalling.elevator_red": "Elevator",
-    "item.imfalling.elevator_red": "Elevator"
+    "item.imfalling.elevator_red": "Elevator",
+    "block.imfalling.elevator_black": "Elevator",
+    "item.imfalling.elevator_black": "Elevator",
+    "block.imfalling.elevator_blue": "Elevator",
+    "item.imfalling.elevator_blue": "Elevator",
+    "block.imfalling.elevator_brown": "Elevator",
+    "item.imfalling.elevator_brown": "Elevator",
+    "block.imfalling.elevator_cyan": "Elevator",
+    "item.imfalling.elevator_cyan": "Elevator",
+    "block.imfalling.elevator_gray": "Elevator",
+    "item.imfalling.elevator_gray": "Elevator",
+    "block.imfalling.elevator_green": "Elevator",
+    "item.imfalling.elevator_green": "Elevator",
+    "block.imfalling.elevator_light_blue": "Elevator",
+    "item.imfalling.elevator_light_blue": "Elevator",
+    "block.imfalling.elevator_light_gray": "Elevator",
+    "item.imfalling.elevator_light_gray": "Elevator",
+    "block.imfalling.elevator_lime": "Elevator",
+    "item.imfalling.elevator_lime": "Elevator",
+    "block.imfalling.elevator_magenta": "Elevator",
+    "item.imfalling.elevator_magenta": "Elevator",
+    "block.imfalling.elevator_orange": "Elevator",
+    "item.imfalling.elevator_orange": "Elevator",
+    "block.imfalling.elevator_pink": "Elevator",
+    "item.imfalling.elevator_pink": "Elevator",
+    "block.imfalling.elevator_purple": "Elevator",
+    "item.imfalling.elevator_purple": "Elevator",
+    "block.imfalling.elevator_yellow": "Elevator",
+    "item.imfalling.elevator_yellow": "Elevator"
 } 
-=======
-	"block.imfalling.elevator": "Elevator",
-	"item.imfalling.elevator": "Elevator"
-}
->>>>>>> 973974dbb8ab3031592ca0792aea7319959e5ab0

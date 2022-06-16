@@ -1,5 +1,7 @@
 {
-    "variants": {
-      "": { "model": "imfalling:block/elevator_white" }
+  "variants": {
+    "": { 
+      "model": "imfalling:block/elevator_white" 
     }
+  }
 }

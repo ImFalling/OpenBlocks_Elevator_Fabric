@@ -1,13 +1,6 @@
 {
-<<<<<<< HEAD:src/main/resources/assets/imfalling/models/block/elevator_red.json
     "parent": "block/cube_all",
     "textures": {
       "all": "imfalling:block/elevator_red"
     }
-=======
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "imfalling:block/elevator"
-	}
->>>>>>> 973974dbb8ab3031592ca0792aea7319959e5ab0:src/main/resources/assets/imfalling/models/block/elevator.json
 }
