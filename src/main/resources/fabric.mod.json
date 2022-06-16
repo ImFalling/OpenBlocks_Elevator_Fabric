@@ -1,15 +1,15 @@
 {
 	"schemaVersion": 1,
 	"id": "ob_elevator",
-	"version": "1.0",
-	"name": "Openblocks Elevator (Fabric)",
+	"version": "1.1",
+	"name": "OpenBlocks Elevator (Fabric)",
 	"description": "Simple port of the elevator from OpenBlocks by ImFalling",
 	"authors": [
 		"ImFalling"
 	],
 	"contact": {
 		"homepage": "https://github.com/ImFalling/",
-		"sources": "https://github.com/ImFalling/"
+		"sources": "https://github.com/ImFalling/OpenBlocks_Elevator_Fabric"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/imfalling/icon.png",
